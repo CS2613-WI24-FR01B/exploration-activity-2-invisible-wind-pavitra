@@ -41,7 +41,8 @@ Sample input 1:
 ```
 Sample Input 1 screenshot:
 
-<img width="642" alt="image" src="https://github.com/CS2613-WI24-FR01B/exploration-activity-2-invisible-wind-pavitra/assets/113079611/5c07e3da-a6d4-4f14-bfef-d885ccdbdcbb">
+<img width="655" alt="image" src="https://github.com/CS2613-WI24-FR01B/exploration-activity-2-invisible-wind-pavitra/assets/113079611/0daebe45-6296-4310-abc8-35165f02fbe0">
+
 Sample input 2: 
 
 
