@@ -36,6 +36,8 @@ Sample Input 1 screenshot:
 
 <img width="642" alt="image" src="https://github.com/CS2613-WI24-FR01B/exploration-activity-2-invisible-wind-pavitra/assets/113079611/5c07e3da-a6d4-4f14-bfef-d885ccdbdcbb">
 Sample input 2: 
+
+
 ```
 > exploration2@1.0.0 test
 > jest
@@ -105,6 +107,8 @@ Time:        24.249 s
 Ran all test suites.
 
 ```
+
+
 Sample Input 2 Screenshot:
 
 <img width="502" alt="image" src="https://github.com/CS2613-WI24-FR01B/exploration-activity-2-invisible-wind-pavitra/assets/113079611/5df1226f-af96-4cd1-9a13-809d48dac327">
