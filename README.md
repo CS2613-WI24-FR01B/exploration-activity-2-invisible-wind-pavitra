@@ -7,7 +7,7 @@
 The library that the sample program demonstrates is Jest. The programming language used is JavaScript.
 
 ## Section 2: How does someone run your program?
-Based on the steps given by Jest [1], the first step is to `npm install --save-dev jest` and an important step is to add the below to the "package.json" file [1]:\n
+Based on the steps given by Jest [1], the first step is to `npm install --save-dev jest` and an important step is to add the below to the "package.json" file [1]:
 `{
   "scripts": {
     "test": "jest"
