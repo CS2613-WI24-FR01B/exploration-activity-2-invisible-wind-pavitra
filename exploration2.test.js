@@ -81,20 +81,35 @@ while(true){
 
 }
 
-test('First book Added', () => {
+test('** Length Check ** - First book Added', () => {
 	arr = [];
 	arr = addBook(arr,"New Book Added");
 	expect(arr.length).toBe(1);
 });
 
-test('First Book Removed', () => {
+test('** Book Addition Check ** - First book Added', () => {
+	arr = [];
+	arr = addBook(arr,"Math");
+	expect(arr).toEqual(["Math"]);
+});
+
+test('** Length Check ** - First Book Removed', () => {
 	arr = [];
 	arr = addBook(arr,"New Book Added");
 	arr = removeBook(arr, "New Book Added");
 	expect(arr.length).toBe(0);
 });
 
-test('Book removed from the End', () => {
+test('** Book Removal Check ** - Books Removed', () => {
+	arr = [];
+	arr = addBook(arr,"Math");
+	arr = addBook(arr,"Science");
+	arr = removeBook(arr, "Math");
+	expect(arr).toEqual(["Science"]);
+});
+
+
+test('** Length Check ** - Book removed from the End', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
 	arr = addBook(arr,"Science");
@@ -104,7 +119,7 @@ test('Book removed from the End', () => {
 	expect(arr.length).toBe(3);
 });
 
-test('Book removed from the Middle', () => {
+test('** Length Check ** - Book removed from the Middle', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
 	arr = addBook(arr,"Science");
@@ -112,6 +127,16 @@ test('Book removed from the Middle', () => {
 	arr = addBook(arr,"French");
 	arr = removeBook(arr, "English");
 	expect(arr.length).toBe(3);
+});
+
+test('** Removal Check ** - Book removed from the Middle', () => {
+	arr = [];
+	arr = addBook(arr,"Math");
+	arr = addBook(arr,"Science");
+	arr = addBook(arr,"English");
+	arr = addBook(arr,"French");
+	arr = removeBook(arr, "English");
+	expect(arr).toEqual(["Math", "Science", "French"]);
 });
 
 test('Many Books Added', () => {
