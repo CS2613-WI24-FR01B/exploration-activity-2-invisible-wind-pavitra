@@ -7,7 +7,14 @@
 The library that the sample program demonstrates is Jest. The programming language used is JavaScript.
 
 ## Section 2: How does someone run your program?
-To run the program, the user needs to clone the repository from GitHub. The user should navigate to the directory through command line and needs to run the program using `npm test`. The program would run and the user can use the book buying program. Once the user quits the program by pressing 5, the results of the tests is displayed.
+Based on the steps given by Jest [1], the first step is to `npm install --save-dev jest` and an important step is to add the below to the "package.json" file [1]:\n
+`{
+  "scripts": {
+    "test": "jest"
+  }
+}`
+
+As I have already coded the project, to run the program, the user needs to clone the repository from GitHub. The user should navigate to the directory through command line and needs to run the program using `npm test`. The program would run and the user can use the book buying program. Once the user quits the program by pressing 5, the results of the tests is displayed.
 
 ## Section 3: What purpose does your program serve?
 The program allows users to add books of their choice to their cart, remove books of their choice from the cart, print the cart, make a payment, and quit the program. Once the program is quit by pressing 5, the program executes test cases built into the program using Jest to test the functionality of the adding and removing books. Overall, this program demonstrates the usage of Jest library of JavaScript to execute a wide variety of test cases. 
@@ -113,4 +120,7 @@ Sample Input 2 Screenshot:
 
 <img width="502" alt="image" src="https://github.com/CS2613-WI24-FR01B/exploration-activity-2-invisible-wind-pavitra/assets/113079611/5df1226f-af96-4cd1-9a13-809d48dac327">
 
+References:
+
+[1] https://jestjs.io/docs/getting-started
 
