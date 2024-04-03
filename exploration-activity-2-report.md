@@ -1,7 +1,7 @@
 # Exploratory Activity 1
 
 ## Section 1: Which package/library did you select?
-   The package/library selected is Turtle within Python.
+   The package/library selected is Jest within JavaScript.
 ## Section 2:  What is the package/library?
 Jest is a "JavaScript Testing Framework with a focus on simplicity [1]". Jest has the capability to work with projects using "Babel, TypeScript, Node, React, Angular, Vue, and more! [1]". Jest is useful because it "aims to work out of the boc, config free, on most JavaScript projects [1] ". Moreover, Jest helps "make tests which keep track of large objects with ease [1]". Jest has the capability to "run tests in parallel" because it "ensures" that the "tests have unique global state" [1]. Jest "uses a customer resolver for imports in" the "tests", which "makes it simple to mock any object outside of your test's scope" [1].  
 
