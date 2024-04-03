@@ -1,5 +1,6 @@
 const prompt = require('prompt-sync')({sigint: true});
 
+// Used to add a book
 function addBook(givenBookArray, bookName){
 
 	givenBookArray.push(bookName);
@@ -8,6 +9,7 @@ function addBook(givenBookArray, bookName){
 
 };
 
+// Used to remove a book
 function removeBook(givenBookArray, bookName){
 
 	let newBookArray = [];
@@ -24,6 +26,7 @@ function removeBook(givenBookArray, bookName){
 	return newBookArray;
 };
 
+// Used to print the book cart
 const printCart = function(givenBookArray){
 	for (let i = 0; i < givenBookArray.length; i++){
 		console.log(givenBookArray[i]);
@@ -31,23 +34,11 @@ const printCart = function(givenBookArray){
 };
 
 
-const test1 = function(givenBookArray){
-	describe("./exploration2.js", () => {
-		test('number of books = 1', () => {
-			expect(givenBookArray.length.toBe(1));
-		});
-	})
-};
 
-/**
-const newChart = new Chart("newChart",{
-	type: "scatter",
-	data: {},
-	options: {}
-});
-*/
+
 let firstTime = 0;
 let finalBookArray = [];
+// while loop for the program
 while(true){
 	console.log('\n\nSelect an operation: \n 1. Add a Book \n 2. Remove a Book \n 3. Print the book cart\n 4. CheckOut \n5. Quit \n');
 	const userInput = Number(prompt(''));
@@ -81,18 +72,21 @@ while(true){
 
 }
 
+// Test case 1
 test('** Length Check ** - First book Added', () => {
 	arr = [];
 	arr = addBook(arr,"New Book Added");
 	expect(arr.length).toBe(1);
 });
 
+// Test case 2
 test('** Book Addition Check ** - First book Added', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
 	expect(arr).toEqual(["Math"]);
 });
 
+// Test Case 3
 test('** Length Check ** - First Book Removed', () => {
 	arr = [];
 	arr = addBook(arr,"New Book Added");
@@ -100,6 +94,7 @@ test('** Length Check ** - First Book Removed', () => {
 	expect(arr.length).toBe(0);
 });
 
+//Test Case 4
 test('** Book Removal Check ** - Books Removed', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
@@ -108,7 +103,7 @@ test('** Book Removal Check ** - Books Removed', () => {
 	expect(arr).toEqual(["Science"]);
 });
 
-
+// Test Case 5
 test('** Length Check ** - Book removed from the End', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
@@ -119,6 +114,7 @@ test('** Length Check ** - Book removed from the End', () => {
 	expect(arr.length).toBe(3);
 });
 
+//Test Case 6
 test('** Length Check ** - Book removed from the Middle', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
@@ -129,6 +125,8 @@ test('** Length Check ** - Book removed from the Middle', () => {
 	expect(arr.length).toBe(3);
 });
 
+
+// Test Case 7
 test('** Removal Check ** - Book removed from the Middle', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
@@ -139,6 +137,7 @@ test('** Removal Check ** - Book removed from the Middle', () => {
 	expect(arr).toEqual(["Math", "Science", "French"]);
 });
 
+// Test Case 8
 test('Many Books Added', () => {
 	arr = [];
 	arr = addBook(arr,"Math");
